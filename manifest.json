@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Preenchimento Automático",
+  "version": "1.0",
+  "description": "Preenche o endereço automaticamente ao digitar o nome do cliente.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["https://api.beteltecnologia.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+        "matches": ["https://gestaoclick.com/vendas_produtos/*"],
+        "js": ["content.js"]
+    }
+]
+
+}
