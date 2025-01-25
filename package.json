@@ -1,7 +1,38 @@
 {
+  "name": "gestaoclick-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "background.js",
+  "type": "module",
+  "scripts": {
+    "start": "echo 'Load content.js in the browser environment.'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiuseppeCrBrandi/gestaoclick-proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GiuseppeCrBrandi/gestaoclick-proxy/issues"
+  },
+  "homepage": "https://github.com/GiuseppeCrBrandi/gestaoclick-proxy#readme",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.21.2",
-    "node-fetch": "^3.3.2"
-  }
+    "@supabase/supabase-js": "^2.47.10",
+    "jsdom": "^25.0.1",
+    "pg": "^8.13.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "dotenv": "^16.4.7",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "keywords": []
 }

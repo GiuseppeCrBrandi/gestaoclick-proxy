@@ -3,16 +3,30 @@
   "name": "Preenchimento Automático",
   "version": "1.0",
   "description": "Preenche o endereço automaticamente ao digitar o nome do cliente.",
-  "permissions": ["storage", "scripting", "activeTab"],
-  "host_permissions": ["https://api.beteltecnologia.com/*"],
+  "permissions": [
+    "storage", 
+    "scripting", 
+    "activeTab",
+    "webRequest"  
+  ],
+  "host_permissions": [
+    "https://api.beteltecnologia.com/*", 
+    "https://cors-heroku.herokuapp.com/*"
+  ],
   "background": {
     "service_worker": "background.js"
   },
+  "action":{ "default_title":"Click me"},
   "content_scripts": [
     {
-        "matches": ["https://gestaoclick.com/vendas_produtos/*"],
-        "js": ["content.js"]
+      "matches": [
+        "https://gestaoclick.com/vendas_produtos/*",
+        "https://gestaoclick.com/clientes/adicionar*",
+        "https://gestaoclick.com/clientes/editar/*"
+      ], 
+      "js": ["dist/content.bundle.js"],
+      "css": ["ui/style.css"],
+      "run_at":"document_end"
     }
-]
-
+  ] 
 }

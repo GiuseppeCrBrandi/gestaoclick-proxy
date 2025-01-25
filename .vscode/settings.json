@@ -1,0 +1,11 @@
+{
+    "workbench.colorCustomizations": {
+        "tab.activeBackground": "#FFFFFF",    // White background
+        "tab.activeForeground": "#000000",    // Black text
+        "tab.activeBorder": "#FFA500",        // Orange border
+        "tab.activeBorderTopWidth": "3px",    // Increase border thickness (top)
+        "tab.activeBorderBottomWidth": "3px", // Increase border thickness (bottom)
+        "tab.activeBorderLeftWidth": "3px",   // Increase border thickness (left)
+        "tab.activeBorderRightWidth": "3px"   // Increase border thickness (right)
+    }
+}

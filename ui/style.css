@@ -1,0 +1,118 @@
+/* Modal Styling */
+.unique-address-modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    z-index: 1000;
+    max-height: 400px;
+    overflow-y: auto;  /* Scroll if there are too many addresses */
+}
+
+.unique-address-option {
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border-left: 4px solid transparent;  /* Add subtle left border for distinction */
+    display: flex;
+    align-items: center; /* Center-align the content */
+}
+
+/* Alternate background color for better differentiation */
+.unique-address-option:nth-child(odd) {
+    background-color: #f2f8ff;  /* Light blue */
+}
+
+.unique-address-option:nth-child(even) {
+    background-color: #f7f7f7;  /* Light gray */
+}
+
+/* Hover effects for interactive address options */
+.unique-address-option:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+/* Adding icons to the left of each address */
+.unique-address-option::before {
+    content: "\1F4CD";  /* Unicode for location pin */
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #007BFF;  /* Color of location pin */
+}
+
+
+.unique-button:hover {
+    background-color: #0056b3;
+}
+
+/* Title Styling */
+.unique-address-modal h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.unique-custom-input { /* Adjust to match existing inputs */
+    margin-bottom: 0px;
+}
+
+.unique-label {
+    display: block; /* Ensure labels are above inputs */
+    margin-bottom: 4px; /* Match existing spacing */
+    font-weight: 400; /* Adjust weight if needed */
+}
+
+.unique-save-button {
+    margin-top: 4px; /* Adjust spacing */
+    margin-left: 4px;
+    vertical-align: middle;
+    height: 38px; /* Match input height */
+}
+
+.unique-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px; /* Ensure elements are stacked vertically */
+   /* gap: 8px; /* Space between elements */
+   margin-top: 6px;
+}
+
+
+/* Container for the success message */
+.success-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #4caf50; /* Green background */
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    z-index: 10000;
+  }
+  
+  /* Checkmark icon */
+  .check-icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  /* Success message text */
+  .success-message {
+    font-size: 16px;
+  }
+  
